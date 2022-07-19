@@ -16,7 +16,7 @@ const Products = () => {
       <div className="bg-danger">
         <h3 className="products-title py-1">Products</h3>
       </div>
-      <div className="all-products">
+      <div className="all-products new">
         {products.map((product) => (
           <Item key={product.id} product={product}></Item>
         ))}
