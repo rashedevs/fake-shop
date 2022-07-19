@@ -26,7 +26,7 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a
                 className="nav-link active fw-bolder text-white mx-3"
                 aria-current="page"
@@ -34,10 +34,10 @@ const Navbar = () => {
               >
                 Home
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link fw-bolder text-white mx-3" href="/">
-                Products
+                All Products
               </a>
             </li>
           </ul>
