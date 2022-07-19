@@ -17,7 +17,7 @@ const Item = ({ product }) => {
         alt={title}
       />
       <div className="image__overlay">
-        <div className="image__title">Click For Details</div>
+        <div className="image__title text-warning">Click For Details</div>
         <p className="image__description">{title}</p>
         <p className="image__description">Price: ${price}</p>
       </div>

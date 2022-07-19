@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import shop from "../../Assets/shop.jpg";
 const Navbar = () => {
   return (
@@ -10,9 +11,9 @@ const Navbar = () => {
           src={shop}
           alt="shop_photo"
         />
-        <a className="navbar-brand fw-bold text-warning me-5 ms-2" href="/">
+        <Link className="navbar-brand fw-bold text-warning me-5 ms-2" to="/">
           Fake Shop
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,9 +28,9 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link fw-bolder text-white mx-3" href="/">
+              <Link className="nav-link fw-bolder text-white mx-3" to="/">
                 All Products
-              </a>
+              </Link>
             </li>
           </ul>
           <form className="d-flex">

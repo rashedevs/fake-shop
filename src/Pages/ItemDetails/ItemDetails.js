@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const ItemDetails = () => {
   const { id } = useParams();
@@ -12,15 +12,23 @@ const ItemDetails = () => {
       .then((data) => setItem(data));
   }, [id]);
   return (
-    <div class="card text-center">
+    <div
+      style={{ height: "100vh" }}
+      class="card text-center bg-success text-white"
+    >
       <div class="card-body">
-        <img style={{ width: "200px" }} src={image} alt="img" />
-        <h5 class="card-title">{title}</h5>
+        <img
+          className="rounded my-2"
+          style={{ width: "300px", height: "300px" }}
+          src={image}
+          alt="img"
+        />
+        <h5 class="card-title mt-2">{title}</h5>
         <p class="card-text">{description}</p>
         <p class="card-text">Price: ${price}</p>
-        <a href="/" class="btn btn-primary">
+        <Link to="/" class="btn btn-primary">
           Back To Home
-        </a>
+        </Link>
       </div>
     </div>
   );
