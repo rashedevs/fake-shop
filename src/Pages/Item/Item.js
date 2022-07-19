@@ -11,7 +11,7 @@ const Item = ({ product }) => {
   return (
     <div onClick={() => navigateToDetail(id)} className="card py-1 image">
       <img
-        style={{ width: "200px", height: "200px" }}
+        style={{ width: "200px", height: "250px" }}
         src={image}
         className="card-img-top mx-auto image__img"
         alt={title}
@@ -19,10 +19,7 @@ const Item = ({ product }) => {
       <div className="image__overlay">
         <div className="image__title">Click For Details</div>
         <p className="image__description">{title}</p>
-        <p className="image__description">${price}</p>
-      </div>
-      <div className="card-body">
-        {/* <h6 className="card-title text-primary my-3">{title}</h6> */}
+        <p className="image__description">Price: ${price}</p>
       </div>
     </div>
   );
