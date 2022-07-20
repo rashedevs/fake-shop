@@ -12,7 +12,7 @@ const Products = () => {
       .then((data) => setProducts(data));
   }, [products]);
   return (
-    <div>
+    <div className="h-100">
       <div className="bg-danger">
         <h3 className="products-title py-1">Products</h3>
       </div>
